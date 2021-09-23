@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Remove Coronavirus News",
+    "description": "Remove Coronavirus News",
+    "version": "1.0.1",
+    "icons": {
+        "128": "img/icon_128.png",
+        "48": "img/icon_48.png",
+        "16": "img/icon_16.png"
+    },
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["http://*/*","https://*/*"],
+            "js": ["content.js"],
+            "css": ["css/stats_bar.css"]
+        }
+    ],
+    "web_accessible_resources": [
+    "css/stats_bar.css",
+    "img/dyatlov_test.png"    
+  ]
+}

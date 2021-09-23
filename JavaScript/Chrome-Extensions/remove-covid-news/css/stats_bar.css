@@ -1,0 +1,24 @@
+.stats_banner {
+  position:fixed;
+  background-color: mediumaquamarine;
+  width: 50px;
+  height: 130px;
+  top: 10%;
+  left: 90%;
+  z-index: 1001;
+  text-align: center;
+  opacity: 0.6;
+  color: #000000;
+  font: 20px Arial, sans-serif;
+  line-height: 1.6;
+}
+.dyatlov_banner {
+  position:fixed;
+  width: 150px;
+  height: 150px;
+  top: 9%;
+  left: 90%;
+  z-index: 1000;
+  object-fit: cover;
+  opacity: 0.9
+}
