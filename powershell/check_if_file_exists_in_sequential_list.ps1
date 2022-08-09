@@ -2,7 +2,7 @@
 [datetime] $endDate = "2021-11-07"
 $fileDateFormat = "yyyyMMdd"
 $suffix = "_LOAN_DATA.csv"
-$path = "D:\Downloads\Cash Shop\Init Import\"
+$path = "<path_to_folder>\"
 
 while($startDate -le $endDate)
 {
