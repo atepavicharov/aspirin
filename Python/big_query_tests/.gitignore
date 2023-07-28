@@ -1,0 +1,2 @@
+# The demoproject file keeps the private_key_id and the private_key itself
+/demoproject*.json
