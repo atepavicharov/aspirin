@@ -1,0 +1,3 @@
+# Ignore the output file
+/schema.xml
+/ddl.*
