@@ -6,8 +6,8 @@ services:
     container_name: mysql-angel-test
     environment:
       - MYSQL_USER=dockertest
-	  - MYSQL_PASSWORD=dockertest
-	  - MYSQL_ROOT_PASSWORD=dockertest
-	  - MYSQL_PORT=3306
+      - MYSQL_PASSWORD=dockertest
+      - MYSQL_ROOT_PASSWORD=dockertest
+      - MYSQL_PORT=3306
      image: mysql
      
