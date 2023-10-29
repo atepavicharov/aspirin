@@ -25,7 +25,7 @@ def talend_data_type(data_type):
         return "id_Byte"
     elif type in ['char', 'character']:
         return "id_Character"
-    elif type in ['date', 'datetime', 'timestamp']:
+    elif type in ['date', 'datetime', 'timestamp', 'time']:
         return "id_Date"
     elif type == 'double':
         return "id_Double"
@@ -89,6 +89,8 @@ for columns in result['tables'][0]['columns']:
     column.set('key', 'false')
     if rm_brackets(columns['type']) == 'datetime':
         column.set('pattern', '"yyyy-MM-dd HH:mm:ss.SSS"')
+    elif rm_brackets(columns['type']) == 'time':
+        column.set('pattern', '"HH:mm:ss.SSS"')
     else:
         column.set('pattern', '')
 
