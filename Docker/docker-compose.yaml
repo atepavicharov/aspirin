@@ -2,9 +2,12 @@ version: '3'
 
 services:
   mysql:
+    command: --default-authentication-plugin=mysql_native_password
     container_name: mysql-angel-test
     environment:
       - MYSQL_USER=dockertest
 	  - MYSQL_PASSWORD=dockertest
 	  - MYSQL_ROOT_PASSWORD=dockertest
 	  - MYSQL_PORT=3306
+     image: mysql
+     
