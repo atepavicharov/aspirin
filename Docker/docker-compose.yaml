@@ -10,4 +10,11 @@ services:
       - MYSQL_ROOT_PASSWORD=dockertest
       - MYSQL_PORT=3306
     image: mysql
+    ports:
+      - 3306:3306 # this will expose the mysql server outside the container through port localhost:3306
+    volumes:
+      - mysql-data:/var/lib/mysql # data will remain persistent after docker-compose down
+
+volumes:
+  mysql-data: null
      
