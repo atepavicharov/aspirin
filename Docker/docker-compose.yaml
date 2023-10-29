@@ -9,5 +9,5 @@ services:
       - MYSQL_PASSWORD=dockertest
       - MYSQL_ROOT_PASSWORD=dockertest
       - MYSQL_PORT=3306
-     image: mysql
+    image: mysql
      
