@@ -1,4 +1,5 @@
 {
+  "name": "codespace-with-mysql",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "dockerComposeFile": "docker-compose.yaml",
   "service": "mysql",
