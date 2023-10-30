@@ -1,0 +1,13 @@
+{
+  "build": { 
+    "dockerfile": "Dockerfile" 
+  },
+  "service": "app",
+	"workspaceFolder": "/workspace",
+  "forwardPorts": [5432],
+  "features": {
+  		"ghcr.io/devcontainers/features/sshd:1": {
+  			"version": "latest"
+  		}
+  }
+}
