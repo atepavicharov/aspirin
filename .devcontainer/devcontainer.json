@@ -4,10 +4,5 @@
   "dockerComposeFile": "docker-compose.yaml",
   "service": "mysql",
   "workspaceFolder": "/workspaces/aspirin",
-  "forwardPorts": [3306],
-  "features": {
-  		"ghcr.io/devcontainers/features/sshd:1": {
-  		"version": "latest"
-  		}
-  }
+  "forwardPorts": [3306]
 }
