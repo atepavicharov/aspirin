@@ -7,6 +7,8 @@ ddl_file = input("path to ddl:")
 print("Supported dialects are listed here https://pypi.org/project/simple-ddl-parser/: 'mssql','mysql'")
 print("Example: mssql,mysql")
 sql_dialect = input("sql dialect:")
+print("type 0 when creating brand new dezign diagram")
+entity_id = int(input("entity.id to start:"))
 
 
 def rm_brackets(instr):
@@ -34,7 +36,7 @@ result = parse_from_file(file_path=ddl_file, output_mode=sql_dialect, group_by_t
 # print(result)
 # Build the XML
 root = ET.Element('entities')
-entity_id = 0
+# entity_id = 0
 
 # Start building the .xml
 # 1. Main (table name, schema)
